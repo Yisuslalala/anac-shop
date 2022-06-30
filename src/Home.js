@@ -12,7 +12,6 @@ import tshirt_3 from './t-shirt_3.jpg'
 import wedding_dress from './wedding_dress_1.jpg'
 
 
-
 function Home() {
   return (
     <div className='home'>
@@ -25,19 +24,60 @@ function Home() {
        
       {/* Aquí hacemos las filas de productos */}
         <div className='home__row'>
-            <Product title='Vestido guindo' price={800} image={dress_1} alt=""/>
-            <Product title='Vestido morado' price={1100} image={dress_2} alt=""/>
+            <Product 
+              id="1"
+              title='Vestido guindo' 
+              price={800} 
+              image={dress_1} 
+              alt="" 
+              rating={4}
+            />
+            <Product
+              id="2" 
+              title='Vestido morado' 
+              price={1100} 
+              image={dress_2} 
+              alt="" 
+              rating={5}
+            />
         </div>
 
         {/* Segunda fila */}
         <div className='home__row'>
-            <Product title='Camisa blanca' price={280} image={tshirt_1} alt=""/>
-            <Product title='Camisa azul' price={270} image={tshirt_2} alt=""/>
-            <Product title='Camisa negra' price={320} image={tshirt_3} alt=""/>
+            <Product 
+              id="3"
+              title='Camisa blanca'
+              price={280} 
+              image={tshirt_1} 
+              alt="" 
+              rating={4}
+            />
+            <Product 
+              title='Camisa azul' 
+              price={270} 
+              image={tshirt_2} 
+              alt="" 
+              rating={5}
+            />
+            <Product 
+              id="4"
+              title='Camisa negra' 
+              price={320} 
+              image={tshirt_3} 
+              alt="" 
+              rating={3}
+            />
         </div>
         {/* Tercera fila */}
         <div className='home__row'>
-        <Product title='Vestido de bodas' price={12000} image={wedding_dress} alt=""/>
+        <Product 
+          id="5"
+          title='Vestido de bodas' 
+          price={12000} 
+          image={wedding_dress} 
+          alt="" 
+          rating={5}
+        />
         </div>
     </div>
   )

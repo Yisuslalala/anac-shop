@@ -5,7 +5,7 @@ import "./Product.css"
 //import dress_1 from './dress_1.jpeg'
 
 
-function Product({title, image, price}) {
+function Product({title, image, price, rating}) {
   return (
     <div className='product'>
 
@@ -16,6 +16,12 @@ function Product({title, image, price}) {
             <strong>{price}</strong>
         </p>
         <div className='product__rating'>
+          {Array (rating)
+            .fill()
+            .map((_, i) => (
+              <p>★</p>
+            ))
+          }
         </div>
       </div>
 
